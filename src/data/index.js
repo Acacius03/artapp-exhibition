@@ -4,7 +4,7 @@ export default [
     width: 474,
     height: 386,
     title: 'Baguio',
-    artist: 'Fernandon Amorsolo',
+    artist: 'Fernando Amorsolo',
     year: '1935',
     medium: 'Oil on Canvas',
     curatorsNote:
@@ -15,8 +15,8 @@ export default [
     width: 1721,
     height: 1278,
     title: 'Barrio Fiesta',
-    artist: 'Fernandon Amorsolo',
-    year: 'Undated (circa mid-20th century)',
+    artist: 'Fernando Amorsolo',
+    year: '1960',
     medium: 'Oil on Canvas',
     curatorsNote:
       'In Barrio Fiesta, Fernando Amorsolo captures the heart of rural Filipino life — vibrant, communal, and full of joy. The painting brings to life a celebration that blends tradition, music, dance, and food in an atmosphere of unity and warmth. Through his luminous palette and masterful composition, Amorsolo emphasizes how fiestas are more than events — they are expressions of cultural pride and resilience. The work reflects the Filipino spirit that finds beauty in togetherness and meaning in every shared moment. As part of this collection, Barrio Fiesta embodies the soul of the nation: festive, rooted, and Filipino by nature.',
@@ -37,7 +37,7 @@ export default [
     width: 540,
     height: 360,
     title: 'Antipolo Fiesta',
-    artist: 'Fernandon Amorsolo',
+    artist: 'Fernando Amorsolo',
     year: '1947',
     medium: 'Oil on Canvas',
     curatorsNote:
@@ -59,7 +59,7 @@ export default [
     width: 2415,
     height: 1730,
     title: 'Planting Rice',
-    artist: 'Fernandon Amorsolo',
+    artist: 'Fernando Amorsolo',
     year: '1946',
     medium: 'Oil on Canvas',
     curatorsNote:
@@ -70,7 +70,7 @@ export default [
     width: 1024,
     height: 703,
     title: 'Under the Mango Tree',
-    artist: 'Fernandon Amorsolo',
+    artist: 'Fernando Amorsolo',
     year: '1950',
     medium: 'Oil on Canvas',
     curatorsNote:

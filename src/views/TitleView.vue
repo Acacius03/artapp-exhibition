@@ -17,13 +17,8 @@
 </template>
 
 <style scoped>
-.screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
 #title {
+  margin: auto;
   text-align: center;
 }
 #title h1 {

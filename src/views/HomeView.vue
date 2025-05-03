@@ -63,12 +63,6 @@ const onGalleryItemClick = (index) => {
 </template>
 
 <style scoped>
-.screen {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  line-height: 1.6;
-}
 #title {
   display: flex;
   justify-content: space-between;
@@ -78,11 +72,8 @@ const onGalleryItemClick = (index) => {
   font-size: 4rem;
 }
 .fab {
-  width: 3rem;
-  height: 3rem;
-  padding: 0.75rem;
-  margin-top: 1.25rem;
-  margin-right: 1.25rem;
+  margin-top: 0.5rem;
+  /* margin-right: 1.25rem; */
 }
 #gallery {
   flex-grow: 1;
