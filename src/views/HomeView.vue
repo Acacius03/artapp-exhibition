@@ -88,6 +88,7 @@ const onGalleryItemClick = (index) => {
   flex-grow: 1;
 }
 #showcase {
+  overflow: scroll;
   width: 100%;
   height: 100%;
   background-color: antiquewhite;
