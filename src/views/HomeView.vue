@@ -86,19 +86,17 @@ const onGalleryItemClick = (index) => {
   flex-grow: 1;
 }
 #showcase-image-container {
-  position: relative;
-  animation: drop 300ms forwards;
   background-color: white;
   height: 400px;
   padding: 1rem;
-  border: 1px solid black;
-  box-shadow: 0 0 0.25rem black;
+  border: 1px solid darkgray;
+  box-shadow: 0 0 0.25rem gray;
 }
 #showcase-image-container img {
   background-color: white;
-  box-shadow: inset 0 0 0.25rem black;
-  padding: 1px;
-  object-fit: cover;
+  box-shadow: inset 0 0 0.25rem gray;
+  padding: 2px;
+  object-fit: contain;
 }
 #showcase-info {
   padding: 1.5rem 2rem;
@@ -129,6 +127,9 @@ const onGalleryItemClick = (index) => {
     column-count: 2;
     gap: 0;
   }
+  #gallery-layout > * {
+    animation: fade-in-bottom 600ms ease-in-out;
+  }
 }
 @media (min-width: 640px) {
   #gallery {
@@ -136,6 +137,7 @@ const onGalleryItemClick = (index) => {
     overflow: hidden;
   }
   #gallery-layout {
+    position: relative;
     aspect-ratio: 1/1;
     flex-grow: 1;
     height: 100%;
@@ -147,28 +149,36 @@ const onGalleryItemClick = (index) => {
     grid-template-rows: repeat(12, 1fr);
   }
   #img1 {
+    opacity: 0;
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 2;
     grid-row-start: 2;
+    animation: fade-in-right 1000ms 600ms forwards ease-in-out;
   }
   #img2 {
+    opacity: 0;
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 9;
     grid-row-start: 9;
+    animation: fade-in-left 1000ms 2100ms forwards ease-in-out;
   }
   #img3 {
+    opacity: 0;
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 10;
+    animation: fade-in-left 1000ms 2600ms forwards ease-in-out;
   }
   #img4 {
+    opacity: 0;
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     grid-column-start: 5;
     grid-row-start: 1;
+    animation: fade-in-right 1000ms 1100ms forwards ease-in-out;
   }
   #img5 {
     grid-column: span 4 / span 4;
@@ -177,32 +187,59 @@ const onGalleryItemClick = (index) => {
     grid-row-start: 4;
   }
   #img6 {
+    opacity: 0;
     grid-column: span 4 / span 4;
     grid-row: span 5 / span 5;
     grid-column-start: 1;
     grid-row-start: 5;
+    animation: fade-in-top 1000ms 3100ms forwards ease-in-out;
   }
   #img7 {
+    opacity: 0;
     grid-column: span 4 / span 4;
     grid-row: span 5 / span 5;
     grid-column-start: 9;
     grid-row-start: 4;
+    animation: fade-in-bottom 1000ms 1600ms forwards ease-in-out;
   }
 }
-
-@keyframes drop {
-  0% {
-    translate: 0 -100%;
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    translate: 100% 0;
   }
-  100% {
+  to {
+    opacity: 1;
     translate: 0 0;
   }
 }
-@keyframes rise {
-  0% {
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    translate: -100% 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes fade-in-bottom {
+  from {
+    opacity: 0;
+    translate: 0 -100%;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
     translate: 0 100%;
   }
-  100% {
+  to {
+    opacity: 1;
     translate: 0 0;
   }
 }

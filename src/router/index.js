@@ -21,7 +21,7 @@ const router = createRouter({
       path: '/home',
       name: 'home',
       component: HomeView,
-      meta: { transition: 'slide-left' },
+      meta: { transition: 'fade' },
     },
   ],
 })
