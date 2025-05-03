@@ -193,10 +193,12 @@ const onGalleryItemClick = (index) => {
     animation: fade-in-right 1000ms 1100ms forwards ease-in-out;
   }
   #img5 {
+    opacity: 0;
     grid-column: span 4 / span 4;
     grid-row: span 6 / span 6;
     grid-column-start: 5;
     grid-row-start: 4;
+    animation: fade-in 1000ms 4100ms ease forwards;
   }
   #img6 {
     opacity: 0;
@@ -213,6 +215,14 @@ const onGalleryItemClick = (index) => {
     grid-column-start: 9;
     grid-row-start: 4;
     animation: fade-in-bottom 1000ms 1600ms forwards ease-in-out;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 @keyframes fade-in-left {

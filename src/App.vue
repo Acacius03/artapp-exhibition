@@ -7,9 +7,15 @@ const transitionName = computed(() => route.meta.transition || 'fade')
 </script>
 
 <template>
-  <Transition :name="transitionName" mode="out-in">
+  <!-- <Transition :name="transitionName" mode="out-in">
     <RouterView />
-  </Transition>
+  </Transition> -->
+
+  <router-view v-slot="{ Component }">
+    <transition :name="transitionName" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style scoped>
