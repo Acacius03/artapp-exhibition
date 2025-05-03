@@ -11,7 +11,7 @@
   >
     <div id="title">
       <h1 class="love-light-regular">Pearl of The Orient : Filipino by Nature</h1>
-      <small>by Cup of Cups</small>
+      <small>by Cup of Kups</small>
     </div>
   </main>
 </template>

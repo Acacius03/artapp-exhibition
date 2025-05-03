@@ -16,7 +16,7 @@ const transitionName = computed(() => route.meta.transition || 'fade')
 /* Slide-left */
 .slide-left-enter-active,
 .slide-left-leave-active {
-  transition: transform 0.3s ease;
+  transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
   position: absolute;
   width: 100%;
 }
@@ -30,7 +30,7 @@ const transitionName = computed(() => route.meta.transition || 'fade')
 /* Fade */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease;
+  transition: opacity 1000ms ease-in-out;
 }
 .fade-enter-from,
 .fade-leave-to {
@@ -40,7 +40,7 @@ const transitionName = computed(() => route.meta.transition || 'fade')
 /* Slide-Up Animation */
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: transform 0.3s ease;
+  transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
   position: absolute;
   width: 100%;
 }

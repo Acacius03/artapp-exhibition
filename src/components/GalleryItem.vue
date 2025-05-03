@@ -20,9 +20,11 @@ defineProps({
 
 <style scoped>
 .gallery-item-container {
+  position: relative;
   padding: 0.25rem;
 }
 .gallery-item {
+  position: relative;
   z-index: 50;
   background-color: white;
   display: block;

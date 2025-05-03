@@ -27,6 +27,11 @@ body,
 }
 #app {
   background-color: antiquewhite;
+  background-image: url('../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
 }
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
