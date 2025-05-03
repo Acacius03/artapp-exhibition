@@ -72,6 +72,7 @@ section p {
   font-weight: 500;
 }
 .fab {
+  margin-top: auto;
   margin-left: auto;
 }
 </style>
