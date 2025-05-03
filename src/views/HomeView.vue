@@ -18,7 +18,7 @@ const onGalleryItemClick = (index) => {
 <template>
   <main class="screen">
     <section id="title">
-      <h1>Welcome</h1>
+      <h1>Mabuhay!</h1>
       <RouterLink to="about" class="fab">
         <IconInfo />
       </RouterLink>
@@ -38,23 +38,25 @@ const onGalleryItemClick = (index) => {
       </div>
     </section>
     <BottomSheet v-if="selectedArtwork" @close="selectedArtwork = null" :startHeight="100">
-      <div id="showcase-image-container">
-        <img
-          :src="selectedArtwork.img"
-          alt="image"
-          :width="selectedArtwork.width"
-          :height="selectedArtwork.height"
-        />
-      </div>
-      <div id="showcase-info">
-        <h1>{{ selectedArtwork.title }}</h1>
-        <small>By {{ selectedArtwork.artist }}</small>
-        <div id="other-info">
-          <p><strong>Medium:</strong> {{ selectedArtwork.medium }}</p>
-          <p><strong>Year:</strong> {{ selectedArtwork.year }}</p>
+      <div id="showcase">
+        <div id="showcase-image-container">
+          <img
+            :src="selectedArtwork.img"
+            alt="image"
+            :width="selectedArtwork.width"
+            :height="selectedArtwork.height"
+          />
         </div>
-        <h3>Curator's Note:</h3>
-        <p id="curators-note">{{ selectedArtwork.curatorsNote }}</p>
+        <div id="showcase-info">
+          <h1>{{ selectedArtwork.title }}</h1>
+          <small>By {{ selectedArtwork.artist }}</small>
+          <div id="other-info">
+            <p><strong>Medium:</strong> {{ selectedArtwork.medium }}</p>
+            <p><strong>Year:</strong> {{ selectedArtwork.year }}</p>
+          </div>
+          <h3>Curator's Note:</h3>
+          <p id="curators-note">{{ selectedArtwork.curatorsNote }}</p>
+        </div>
       </div>
     </BottomSheet>
   </main>
@@ -85,15 +87,25 @@ const onGalleryItemClick = (index) => {
 #gallery {
   flex-grow: 1;
 }
+#showcase {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  background-image: url('../assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: color-burn;
+}
 #showcase-image-container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.4);
   height: 400px;
   padding: 1rem;
   border: 1px solid darkgray;
   box-shadow: 0 0 0.25rem gray;
 }
 #showcase-image-container img {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 0 0.25rem gray;
   padding: 2px;
   object-fit: contain;
