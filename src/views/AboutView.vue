@@ -47,7 +47,6 @@ import IconArrowRight from '../components/icons/IconArrowRight.vue'
   flex-direction: column;
   padding: 2rem;
   line-height: 1.6;
-  overflow: scroll;
 }
 #credits {
   margin-top: 2rem;
